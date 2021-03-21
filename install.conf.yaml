@@ -1,0 +1,41 @@
+- defaults:
+    link:
+      relink: true
+      
+- clean: ['~']
+
+- shell:
+    - [git submodule update, Updating dotbot]
+    - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    ~/.brewfile:
+        force: true
+        relink: true
+        path: brewfile
+    ~/.gemrc:
+        force: true
+        relink: true
+        path: gemrc
+    ~/.default-gems:
+        force: true
+        relink: true
+        path: default-gems
+    ~/.gitignore:
+        force: true
+        relink: true
+        path: gitignore
+    ~/.zshrc:
+        force: true
+        relink: true
+        path: zshrc
+
+- shell:
+  - description: install homebrew
+    command: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    stdout: true
+    stdin: true
+  - description: install homebrew formulas
+    command: bash -c "brew bundle"
+    stdout: true
+    stdin: true

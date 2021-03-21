@@ -1,0 +1,5 @@
+# Android SDK
+export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools
+
+# Ruby (via Homebrew)
+export PATH="/usr/local/opt/ruby@2.7/bin:$PATH"

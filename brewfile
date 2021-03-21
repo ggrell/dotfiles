@@ -1,0 +1,60 @@
+# Taps
+tap 'homebrew/bundle'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/services'
+tap 'AdoptOpenJDK/openjdk'
+
+# Commands
+brew 'zsh'
+brew 'ruby@2.7'
+brew 'libffi'
+
+# Casks
+cask 'iterm2'
+
+cask 'font-jetbrains-mono-nerd-font'
+cask 'font-sf-pro'
+
+cask 'google-chrome'
+cask 'firefox'
+
+cask 'adoptopenjdk8'
+cask 'adoptopenjdk11'
+
+cask 'jetbrains-toolbox'
+cask 'visual-studio-code'
+cask 'sf-symbols'
+
+cask 'discord'
+cask 'ytmdesktop-youtube-music'
+cask 'bartender'
+cask 'choosy'
+cask 'muzzle'
+cask 'google-photos-backup-and-sync'
+cask 'itsycal'
+cask 'keycastr'
+cask 'authy'
+cask 'obsidian'
+cask 'flux'
+cask 'fork'
+cask 'postman'
+cask 'superduper'
+cask 'handbrake'
+cask 'db-browser-for-sqlite'
+
+# App Store
+brew 'mas'
+
+mas 'Keynote', id: 409183694
+mas 'Slack', id: 803453959
+mas '1Blocker for Safari', id: 1365531024
+mas 'DevCleaner for Xcode', id: 1388020431
+mas 'RocketSim for Xcode', id: 1504940162
+mas 'iHosts - /etc/hosts editor', id: 1102004240
+mas 'Flow - Focus & Pomodoro Timer', id: 1423210932
+mas 'Unsplash Wallpapers', id: 1284863847
+mas 'FruitJuice - Battery Health', id: 671736912
+mas 'Apple Developer', id: 640199958
+mas 'CCMenu', id: 603117688
+mas 'Moom', id: 419330170
+mas 'Balance Lock', id: 1019371109
