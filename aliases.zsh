@@ -12,10 +12,8 @@
 #alias tree='tree -Csuh'    #  Nice alternative to 'recursive ls' ...
 
 # bundle shortcuts
-alias be='bundle exec'
-alias bp='bundle exec pod'
-alias bpi='bundle exec pod install'
-alias bf='bundle exec fastlane'
+alias bpi='be pod install'
+alias bf='be fastlane'
 
 alias up='brew update && brew upgrade && brew doctor && brew cleanup'
 

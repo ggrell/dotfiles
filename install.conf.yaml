@@ -39,3 +39,11 @@
     command: bash -c "brew bundle"
     stdout: true
     stdin: true
+  - description: todo - p10k configure
+    command: echo "p10k configure"
+    stdout: true
+    stdin: true
+  - description: todo - install iterm2 theme
+    command: echo "get from https://raw.githubusercontent.com/n0nz/iterm2-jetbrains-darcula/master/Jetbrains%20Darcula%20Darker.itermcolors"
+    stdout: true
+    stdin: true
