@@ -32,11 +32,11 @@
 
 - shell:
   - description: install homebrew
-    command: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     stdout: true
     stdin: true
   - description: install homebrew formulas
-    command: bash -c "brew bundle"
+    command: /bin/bash -c "brew bundle"
     stdout: true
     stdin: true
   - description: todo - p10k configure
