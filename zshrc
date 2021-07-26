@@ -14,6 +14,7 @@ source $HOME/.dotfiles/antigen.zsh
 source $HOME/.dotfiles/path
 source $HOME/.dotfiles/exports
 source $HOME/.dotfiles/aliases.zsh
+source $HOME/.exports
 
 # Load oh-my-zsh's library
 antigen use oh-my-zsh
@@ -148,6 +149,36 @@ antigen apply
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+temppack() {
+  if [ -z "$1" ] 
+    then
+      echo "Usage: temppack PackageName"
+  else
+    mkdir temppack
+    cd temppack 
+    mkdir $1
+    cd $1
+    swift package init --type library
+    git init
+    git add .
+    git commit -m "first"
+    echo ""
+    echo "file://$(pwd)" | pbcopy
+    echo "The repository path for $1 is now in your clipboard."
+    echo ""
+    [[ $BASH_VERSION ]] && read -p "Delete temp files?[Y/N]" -n 1 -r
+    [[ $ZSH_VERSION ]] && read -q "REPLY?Delete temp files?[Y/N]"
+    echo ""
+    cd ../..
+    if [[ $REPLY =~ ^[Yy]$ ]]
+    then
+      echo "Deleting temporary folder..."
+      rm -rf temppack 
+      echo "Done."
+    fi
+  fi
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
