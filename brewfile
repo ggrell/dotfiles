@@ -2,11 +2,11 @@
 tap 'homebrew/bundle'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/services'
-tap 'AdoptOpenJDK/openjdk'
 
 # Commands
 brew 'ruby@2.7'
 brew 'libffi'
+brew 'jenv'
 
 # Casks
 cask 'iterm2'
@@ -17,9 +17,7 @@ cask 'font-sf-pro'
 cask 'google-chrome'
 cask 'firefox'
 
-cask 'adoptopenjdk8'
-cask 'adoptopenjdk9'
-cask 'adoptopenjdk11'
+cask 'temurin11'
 
 cask 'jetbrains-toolbox'
 cask 'visual-studio-code'

@@ -47,3 +47,7 @@
     command: echo "get from https://raw.githubusercontent.com/n0nz/iterm2-jetbrains-darcula/master/Jetbrains%20Darcula%20Darker.itermcolors"
     stdout: true
     stdin: true
+  - description: Add JDK 11 to jenv
+    command: jenv add /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/
+    stdout: true
+    stdin: true
