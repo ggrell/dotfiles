@@ -11,8 +11,7 @@ ZSH_BASE=$HOME/.dotfiles
 source $HOME/.dotfiles/antigen.zsh
 
 # Load configs
-source $HOME/.dotfiles/path
-source $HOME/.dotfiles/exports
+source $HOME/.dotfiles/exports.zsh
 source $HOME/.dotfiles/aliases.zsh
 source $HOME/.exports
 

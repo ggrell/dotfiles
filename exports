@@ -1,7 +1,0 @@
-eval "$(/usr/local/bin/brew shellenv)"
-
-#export LDFLAGS="-L/usr/local/opt/ruby@2.7/lib"
-#export CPPFLAGS="-I/usr/local/opt/ruby@2.7/include"
-
-export LDFLAGS="-L/usr/local/opt/libffi/lib"
-export CPPFLAGS="-I/usr/local/opt/libffi/include"
