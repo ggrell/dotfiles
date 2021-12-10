@@ -39,6 +39,7 @@ cask 'postman'
 cask 'superduper'
 cask 'handbrake'
 cask 'db-browser-for-sqlite'
+cask 'nightowl'
 
 # App Store
 brew 'mas'
